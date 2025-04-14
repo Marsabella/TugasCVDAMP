@@ -373,3 +373,49 @@ body.dark-mode .gallery-item {
   box-shadow: 0 4px 10px rgba(255, 230, 167, 0.1);
 }
 
+/* Gaya umum untuk elemen lain di CV */
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Semua aturan lain seperti yang ada sebelumnya */
+
+/* Menambahkan media queries untuk responsivitas */
+
+@media screen and (max-width: 768px) {
+  /* Mengatur ulang layout di layar kecil */
+  .gallery {
+    grid-template-columns: 1fr; /* Menjadi satu kolom */
+  }
+
+  /* Memperbesar ukuran font di header untuk layar kecil */
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  /* Memperkecil padding di section */
+  section {
+    padding: 20px 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Gambar responsif */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* Mengubah layout di layar lebih besar */
+  .gallery {
+    grid-template-columns: repeat(4, 1fr); /* Menampilkan 4 kolom */
+  }
+}
